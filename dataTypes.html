@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Types Examples</title>
+  </head>
+  <body>
+    <h1>
+      Javascript Data Types: String, Number, Boolean, Undefined, Null, Object ,
+      Array Example
+    </h1>
+    <script>
+     
+      let name = "Alice";
+      let greeting = "Hello, world!";
+
+      
+      let age = 30;
+      let price = 19.99;
+
+      
+      let isLoggedIn = true;
+      let isAdmin = false;
+
+      
+      let score;
+      console.log(score); // undefined
+      
+      let selectedUser = null;
+
+      
+      let user = {
+        name: "Alice",
+        age: 25,
+        isMember: true,
+      };
+
+      
+      console.log(typeof name); // "string"
+      console.log(typeof age); // "number"
+      console.log(typeof isLoggedIn); // "boolean"
+      console.log(typeof score); // "undefined"
+      console.log(typeof selectedUser); // "object" (this is a known quirk in JavaScript)
+      console.log(typeof user); // "object"
+
+    
+      let numbers = [1, 2, 3, 4, 5];
+
+      
+      let fruits = ["apple", "banana", "cherry"];
+
+    
+      let mixed = [42, "hello", true, null, undefined, { name: "Alice" }];
+
+      
+      let matrix = [
+        [1, 2],
+        [3, 4],
+      ];
+
+      
+      console.log(fruits[0]); // "apple"
+      console.log(mixed[5].name); // "Alice"
+      
+      fruits.push("orange"); // Adds "orange" at the end
+      fruits.pop(); // Removes last element
+      fruits.unshift("grape"); // Adds "grape" at the beginning
+      fruits.shift(); // Removes first element
+
+      console.log(fruits.length); // Number of items in the array
+      //Check Array Type
+      console.log(Array.isArray(fruits)); // true
+      console.log(typeof fruits); // "object"
+    </script>
+  </body>
+</html>
